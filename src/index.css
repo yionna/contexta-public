@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  color: #24304c;
+  background: #bad8ee;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --navy: #273253;
+  --muted: #697393;
+  --pink: #ff8fbb;
+  --pink-dark: #d95391;
+  --blue: #a9daf1;
+  --blue-dark: #6faeca;
+  --lavender: #c6b8ec;
+  --cream: #fffdf7;
+  --line: #8995b2;
+  --shadow: rgba(52, 65, 105, .26);
+}
+* { box-sizing: border-box; }
+html, body, #root { width: 100%; min-width: 320px; min-height: 100%; margin: 0; }
+body { min-height: 100vh; overflow: hidden; }
+button, input, textarea, select { font: inherit; }
+button { color: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px dashed #d83d84; outline-offset: 2px; }
+::selection { color: white; background: #e65396; }
+
+.auth-gate { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 22% 18%, #fff8c9 0 7%, transparent 24%), linear-gradient(145deg, #b9dff2, #d8c9f2 58%, #f4c8dc); }
+.auth-gate section { width: min(430px, 100%); padding: 34px; text-align: center; border: 2px solid #68779b; border-radius: 18px; background: rgba(255, 253, 247, .94); box-shadow: 10px 12px 0 rgba(60, 72, 112, .2); }
+.auth-gate-mark { display: grid; place-items: center; width: 56px; height: 56px; margin: 0 auto 18px; color: white; font: 700 30px Georgia, serif; border-radius: 15px; background: #e65396; box-shadow: inset -4px -4px 0 rgba(94, 34, 78, .2); }
+.auth-gate p { margin: 0; color: #697393; font-size: 11px; font-weight: 800; letter-spacing: .16em; }
+.auth-gate h1 { margin: 9px 0 10px; font: 700 30px Georgia, serif; }
+.auth-gate section > span:not(.auth-gate-mark) { display: block; line-height: 1.5; color: #596582; }
+.turnstile-slot { min-height: 70px; margin: 24px auto 12px; }
+.auth-gate small { display: block; min-height: 18px; color: #697393; }

@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: contexta-yionna
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:ai
+    healthCheckPath: /api/ai/health
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: TRUST_PROXY
+        value: "true"
+      - key: CLOUDFLARE_ACCOUNT_ID
+        sync: false
+      - key: CLOUDFLARE_AI_API_TOKEN
+        sync: false
+      - key: AI_API_BASE_URL
+        sync: false
+      - key: AI_GENERATION_MODEL
+        value: "@cf/qwen/qwen3-30b-a3b-fp8"
+      - key: AI_EMBEDDING_MODEL
+        value: "@cf/qwen/qwen3-embedding-0.6b"
+      - key: TURNSTILE_SITE_KEY
+        sync: false
+      - key: TURNSTILE_SECRET_KEY
+        sync: false
+      - key: TURNSTILE_ALLOWED_HOSTNAMES
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
