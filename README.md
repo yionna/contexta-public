@@ -71,8 +71,8 @@ Provider credentials remain on the server. Retrieved pages are treated as untrus
 ### Install
 
 ```bash
-git clone https://github.com/yionna/contexta.git
-cd contexta
+git clone https://github.com/yionna/contexta-public.git
+cd contexta-public
 npm ci
 cp .env.example .env.local
 ```
@@ -160,9 +160,11 @@ server/ai.mjs           Cloudflare Workers AI adapter
 
 See [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md) for the consolidated implementation history and known follow-up work.
 
-## Media attribution
+## Music files intentionally excluded
 
-Background tracks are bundled locally. Creator credits and original source pages are recorded in [src/assets/music/LICENSE.md](src/assets/music/LICENSE.md). The music files are not fetched from third-party hosts at runtime.
+Contexta has used eight background tracks obtained from Pixabay Music. To respect the [Pixabay Content License](https://pixabay.com/service/license-summary/) and its restriction on distributing content on a standalone basis, this public repository intentionally excludes the music binaries and the application code that imports or plays them.
+
+The track titles, creator credits, and original source pages are retained in [src/assets/music/LICENSE.md](src/assets/music/LICENSE.md) as an attribution record only. The record does not redistribute the tracks or grant permission to reuse them; obtain each track from its original source and review the terms that apply there. The official Pixabay license controls if this explanation differs from it.
 
 Project artwork provenance is recorded in [ASSET_PROVENANCE.md](ASSET_PROVENANCE.md), and third-party terms are summarized in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
