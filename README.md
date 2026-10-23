@@ -5,6 +5,10 @@ Contexta is an experimental AI news sensemaking workspace presented as a small d
 This repository contains the public demo. It is designed to make provenance and uncertainty visible: indexed coverage is a lead, not verified truth, and important claims should always be checked against the linked sources.
 
 **Live demo:** https://contexta-yionna-4gz0.onrender.com/
+**Read the blogs here!**
+[I Let AI Gossip About News](https://yionna.substack.com/p/ai-news-gossip-contexta)
+[When Humanities Meet AI (Part 1: Rules for AI)](https://yionna.substack.com/p/when-humanities-meet-ai-part-1-rules)
+[What Messenger Games Taught Me About Building AI Personas](https://yionna.substack.com/p/what-messenger-games-taught-me-about)
 
 > **Display note:** Contexta is best experienced on a desktop or tablet. The demo can be opened on a phone, but some desktop-style windows, navigation controls, and the 3D graph are not yet fully optimized for small screens.
 
